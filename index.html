@@ -3,127 +3,141 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GAP Analytics Consulting</title>
-<meta name="description" content="Strategic analytics consulting for organizations that demand clarity.">
+<title>Geneva Analytics Partners</title>
+<meta name="description" content="Geneva-based analytics consulting. Economics, management and statistics expertise combined to turn data into decisive strategy.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --ink:#1a1a18;--ink-2:#4a4a46;--ink-3:#8a8a84;
-  --paper:#fafaf8;--paper-2:#f2f2ee;--paper-3:#e8e8e2;
-  --accent:#1a3a2a;--accent-2:#2d6648;--accent-light:#e8f0eb;
-  --line:rgba(26,26,24,0.1);
+  --navy:#1b2f5e;--navy-2:#243a73;--navy-3:#2e4a8f;
+  --ink:#0f1a30;--ink-2:#3a4a6b;--ink-3:#7a8aa8;
+  --paper:#f8f9fc;--paper-2:#eef1f8;--paper-3:#dde2ee;
+  --accent-light:#e4e9f5;--line:rgba(27,47,94,0.1);
   --serif:'Libre Baskerville',Georgia,serif;
   --sans:'DM Sans',system-ui,sans-serif;
-  --max-w:1100px;--nav-h:68px;
+  --max-w:1100px;--nav-h:70px;
 }
 html{scroll-behavior:smooth;font-size:16px}
 body{font-family:var(--sans);color:var(--ink);background:var(--paper);line-height:1.6;-webkit-font-smoothing:antialiased}
 a{text-decoration:none}
 
 /* NAV */
-.site-header{position:fixed;top:0;left:0;right:0;z-index:100;height:var(--nav-h);background:rgba(250,250,248,0.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-.nav-inner{max-width:var(--max-w);margin:0 auto;padding:0 2rem;height:100%;display:flex;align-items:center}
-.logo{display:flex;align-items:center;gap:10px;color:var(--ink)}
-.logo-mark{width:34px;height:34px;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:16px;font-weight:700}
-.logo-text{font-size:14px;font-weight:500;letter-spacing:0.02em}
+.site-header{position:fixed;top:0;left:0;right:0;z-index:100;height:var(--nav-h);background:rgba(248,249,252,0.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:var(--max-w);margin:0 auto;padding:0 2rem;height:100%;display:flex;align-items:center;gap:1rem}
+.logo{display:flex;align-items:center;gap:12px;color:var(--ink)}
+.logo-img{height:40px;width:auto;object-fit:contain}
+.logo-text{font-size:14px;font-weight:500;letter-spacing:0.01em;color:var(--navy)}
 .nav-links{display:flex;list-style:none;gap:0.25rem;margin-left:auto;align-items:center}
 .nav-links a{color:var(--ink-2);font-size:14px;padding:6px 14px;transition:color 0.2s}
-.nav-links a:hover{color:var(--ink)}
-.nav-cta{background:var(--accent)!important;color:#fff!important;padding:7px 18px!important;font-weight:500}
-.nav-cta:hover{background:var(--accent-2)!important;color:#fff!important}
+.nav-links a:hover{color:var(--navy)}
+.nav-cta{background:var(--navy)!important;color:#fff!important;padding:7px 18px!important;font-weight:500;transition:background 0.2s!important}
+.nav-cta:hover{background:var(--navy-2)!important;color:#fff!important}
 .nav-toggle{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px;margin-left:auto}
-.nav-toggle span{display:block;width:22px;height:1.5px;background:var(--ink)}
+.nav-toggle span{display:block;width:22px;height:1.5px;background:var(--navy)}
 
 /* HERO */
 .hero{min-height:100vh;display:grid;place-items:center;padding:calc(var(--nav-h) + 4rem) 2rem 6rem;position:relative;overflow:hidden}
-.hero-grid{position:absolute;inset:0;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:60px 60px;-webkit-mask-image:linear-gradient(to bottom,transparent,rgba(0,0,0,0.3) 30%,rgba(0,0,0,0.3) 70%,transparent);mask-image:linear-gradient(to bottom,transparent,rgba(0,0,0,0.3) 30%,rgba(0,0,0,0.3) 70%,transparent)}
-.hero-inner{max-width:800px;text-align:center;position:relative;z-index:1}
-.hero-eyebrow{display:inline-block;font-size:11px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--accent-2);border:1px solid var(--accent-light);background:var(--accent-light);padding:5px 14px;margin-bottom:2.5rem}
-.hero h1{font-family:var(--serif);font-size:clamp(2.4rem,6vw,4.2rem);font-weight:400;line-height:1.18;letter-spacing:-0.02em;margin-bottom:1.75rem}
-.hero h1 em{font-style:italic;color:var(--accent)}
-.hero-sub{font-size:1.05rem;color:var(--ink-2);max-width:540px;margin:0 auto 3rem;line-height:1.75;font-weight:300}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:60px 60px;-webkit-mask-image:linear-gradient(to bottom,transparent,rgba(0,0,0,0.25) 25%,rgba(0,0,0,0.25) 75%,transparent);mask-image:linear-gradient(to bottom,transparent,rgba(0,0,0,0.25) 25%,rgba(0,0,0,0.25) 75%,transparent)}
+.hero-inner{max-width:820px;text-align:center;position:relative;z-index:1}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--navy-2);border:1px solid var(--accent-light);background:var(--accent-light);padding:5px 16px;margin-bottom:2.5rem}
+.eyebrow-dot{width:6px;height:6px;border-radius:50%;background:var(--navy-3)}
+.hero h1{font-family:var(--serif);font-size:clamp(2.4rem,6vw,4.2rem);font-weight:400;line-height:1.18;letter-spacing:-0.02em;margin-bottom:1.75rem;color:var(--ink)}
+.hero h1 em{font-style:italic;color:var(--navy)}
+.hero-sub{font-size:1.05rem;color:var(--ink-2);max-width:560px;margin:0 auto 3rem;line-height:1.8;font-weight:300}
 .hero-actions{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
-.btn-primary{display:inline-block;background:var(--accent);color:#fff;font-size:14px;font-weight:500;padding:14px 32px;transition:background 0.2s,transform 0.15s}
-.btn-primary:hover{background:var(--accent-2);transform:translateY(-1px)}
+.btn-primary{display:inline-block;background:var(--navy);color:#fff;font-size:14px;font-weight:500;padding:14px 32px;transition:background 0.2s,transform 0.15s}
+.btn-primary:hover{background:var(--navy-2);transform:translateY(-1px)}
 .btn-secondary{display:inline-block;border:1px solid var(--paper-3);color:var(--ink-2);font-size:14px;padding:14px 32px;transition:border-color 0.2s,color 0.2s}
 .btn-secondary:hover{border-color:var(--ink-3);color:var(--ink)}
 .hero-stat-row{display:flex;justify-content:center;margin-top:5rem;border-top:1px solid var(--line);padding-top:3rem}
 .hero-stat{text-align:center;padding:0 3rem}
 .hero-stat+.hero-stat{border-left:1px solid var(--line)}
-.hero-stat-num{font-family:var(--serif);font-size:2rem;font-weight:400}
-.hero-stat-label{font-size:12px;color:var(--ink-3);letter-spacing:0.06em;text-transform:uppercase;margin-top:4px}
+.hero-stat-num{font-family:var(--serif);font-size:2rem;font-weight:400;color:var(--navy)}
+.hero-stat-label{font-size:11px;color:var(--ink-3);letter-spacing:0.07em;text-transform:uppercase;margin-top:5px}
 
 /* ABOUT */
 .about{padding:8rem 2rem;background:var(--paper-2)}
-.about-inner{max-width:var(--max-w);margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
+.about-inner{max-width:var(--max-w);margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start}
 .section-label{font-size:11px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-3);margin-bottom:1.25rem}
-.about h2{font-family:var(--serif);font-size:clamp(1.8rem,4vw,2.6rem);font-weight:400;line-height:1.25;margin-bottom:1.5rem}
-.about h2 em{font-style:italic;color:var(--accent)}
+.about h2{font-family:var(--serif);font-size:clamp(1.8rem,4vw,2.6rem);font-weight:400;line-height:1.25;margin-bottom:1.5rem;color:var(--ink)}
+.about h2 em{font-style:italic;color:var(--navy)}
 .about p{color:var(--ink-2);line-height:1.85;font-weight:300;margin-bottom:1.25rem}
+.team-disciplines{display:flex;flex-wrap:wrap;gap:8px;margin-top:1.75rem}
+.discipline-tag{font-size:12px;font-weight:500;color:var(--navy-2);background:var(--accent-light);border:1px solid var(--paper-3);padding:6px 14px}
 .about-pillars{display:flex;flex-direction:column;gap:1.5rem}
 .pillar{display:flex;gap:1.25rem;align-items:flex-start}
-.pillar-num{font-family:var(--serif);font-size:1.5rem;color:var(--accent-light);min-width:2rem;font-weight:700;line-height:1;-webkit-text-stroke:1px var(--accent)}
-.pillar-text strong{display:block;font-size:15px;font-weight:500;margin-bottom:4px}
+.pillar-num{font-family:var(--serif);font-size:1.5rem;color:var(--accent-light);min-width:2rem;font-weight:700;line-height:1;-webkit-text-stroke:1px var(--navy)}
+.pillar-text strong{display:block;font-size:15px;font-weight:500;margin-bottom:4px;color:var(--ink)}
 .pillar-text p{font-size:14px;color:var(--ink-3);margin:0;line-height:1.65}
 
 /* SERVICES */
-.services{padding:8rem 2rem}
+.services{padding:8rem 2rem;background:var(--paper)}
 .services-inner{max-width:var(--max-w);margin:0 auto}
 .section-header{text-align:center;margin-bottom:4.5rem}
-.section-header h2{font-family:var(--serif);font-size:clamp(1.8rem,4vw,2.6rem);font-weight:400}
+.section-header h2{font-family:var(--serif);font-size:clamp(1.8rem,4vw,2.6rem);font-weight:400;color:var(--ink)}
 .section-header p{color:var(--ink-2);font-weight:300;max-width:500px;margin:1rem auto 0}
 .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
 .service-card{background:var(--paper);padding:2.5rem 2rem;position:relative;overflow:hidden;transition:background 0.25s}
-.service-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform 0.35s cubic-bezier(0.4,0,0.2,1)}
+.service-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--navy);transform:scaleX(0);transform-origin:left;transition:transform 0.35s cubic-bezier(0.4,0,0.2,1)}
 .service-card:hover{background:var(--paper-2)}
 .service-card:hover::before{transform:scaleX(1)}
 .service-icon{width:40px;height:40px;margin-bottom:1.5rem;display:flex;align-items:center;justify-content:center}
-.service-icon svg{width:28px;height:28px;stroke:var(--accent);stroke-width:1.5;fill:none}
-.service-card h3{font-size:16px;font-weight:500;margin-bottom:0.75rem}
+.service-icon svg{width:28px;height:28px;stroke:var(--navy);stroke-width:1.5;fill:none}
+.service-card h3{font-size:16px;font-weight:500;margin-bottom:0.75rem;color:var(--ink)}
 .service-card p{font-size:14px;color:var(--ink-2);line-height:1.75;font-weight:300}
 
 /* WORK */
 .work{padding:8rem 2rem;background:var(--paper-2)}
 .work-inner{max-width:var(--max-w);margin:0 auto}
 .work-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line)}
-.work-card{background:var(--paper);padding:2.5rem 2rem;display:flex;flex-direction:column;gap:1rem;transition:background 0.25s}
+.work-grid-single{grid-template-columns:1fr;max-width:760px;margin:0 auto}
+.work-card{background:var(--paper);padding:2.5rem 2rem;display:flex;flex-direction:column;gap:1rem;transition:background 0.25s;position:relative}
 .work-card:hover{background:#fff}
+.work-card.ongoing::after{content:'Ongoing';position:absolute;top:1.25rem;right:1.25rem;font-size:9px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:#fff;background:var(--navy-3);padding:3px 9px}
 .work-card-header{display:flex;justify-content:space-between;align-items:center}
-.work-tag{font-size:11px;font-weight:500;letter-spacing:0.06em;color:var(--accent-2);background:var(--accent-light);padding:4px 10px;text-transform:uppercase}
+.work-tag{font-size:11px;font-weight:500;letter-spacing:0.06em;color:var(--navy-2);background:var(--accent-light);padding:4px 10px;text-transform:uppercase}
 .work-year{font-size:12px;color:var(--ink-3);font-weight:300}
-.work-card h3{font-size:16px;font-weight:500;line-height:1.4}
+.work-card h3{font-size:16px;font-weight:500;line-height:1.4;color:var(--ink)}
 .work-client{font-size:12px;color:var(--ink-3);font-style:italic}
 .work-summary{font-size:13.5px;color:var(--ink-2);line-height:1.8;font-weight:300;flex:1}
-.work-result{border-top:1px solid var(--line);padding-top:1rem;margin-top:0.5rem;display:flex;flex-direction:column;gap:4px}
+.work-findings{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin:0.5rem 0}
+.finding-item{background:var(--paper-2);padding:1rem;display:flex;flex-direction:column;gap:4px;text-align:center}
+.finding-num{font-family:var(--serif);font-size:1.4rem;font-weight:400;color:var(--navy)}
+.finding-desc{font-size:11px;color:var(--ink-3);line-height:1.5}
+.work-result{border-top:1px solid var(--line);padding-top:1rem;margin-top:0.25rem;display:flex;flex-direction:column;gap:4px}
 .result-label{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink-3);font-weight:500}
-.result-text{font-size:13.5px;font-weight:500;color:var(--accent);line-height:1.5}
+.result-text{font-size:13.5px;font-weight:500;color:var(--navy);line-height:1.5}
+.work-team{border-top:1px solid var(--line);padding-top:0.85rem;display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
+.team-label{font-size:10px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink-3);white-space:nowrap}
+.team-names{font-size:12px;color:var(--ink-2);line-height:1.6}
+
+@media(max-width:600px){.work-findings{grid-template-columns:1fr}}
 
 /* CONTACT */
-.contact{padding:8rem 2rem;background:var(--accent)}
+.contact{padding:8rem 2rem;background:var(--navy)}
 .contact-inner{max-width:700px;margin:0 auto;text-align:center}
-.contact .section-label{color:rgba(255,255,255,0.45)}
+.contact .section-label{color:rgba(255,255,255,0.4)}
 .contact h2{font-family:var(--serif);font-size:clamp(1.8rem,4vw,2.6rem);font-weight:400;color:#fff;margin-bottom:1.25rem}
-.contact>div>p,.contact-inner>p{color:rgba(255,255,255,0.65);font-weight:300;max-width:480px;margin:0 auto 3rem;line-height:1.85}
+.contact-intro{color:rgba(255,255,255,0.6);font-weight:300;max-width:480px;margin:0 auto 3rem;line-height:1.85}
 .contact-form{display:flex;flex-direction:column;gap:1rem;text-align:left}
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
 .form-group{display:flex;flex-direction:column;gap:6px}
-.form-group label{font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.5)}
-.form-group input,.form-group select,.form-group textarea{background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);color:#fff;padding:12px 14px;font-family:var(--sans);font-size:15px;outline:none;transition:border-color 0.2s;resize:vertical}
-.form-group input::placeholder,.form-group textarea::placeholder{color:rgba(255,255,255,0.25)}
-.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:rgba(255,255,255,0.5)}
-.form-group select option{background:var(--accent)}
-.form-submit{background:#fff;color:var(--accent);border:none;padding:15px 36px;font-size:15px;font-weight:500;font-family:var(--sans);cursor:pointer;align-self:flex-start;transition:opacity 0.2s,transform 0.15s;margin-top:0.5rem}
+.form-group label{font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.45)}
+.form-group input,.form-group select,.form-group textarea{background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.14);color:#fff;padding:12px 14px;font-family:var(--sans);font-size:15px;outline:none;transition:border-color 0.2s;resize:vertical}
+.form-group input::placeholder,.form-group textarea::placeholder{color:rgba(255,255,255,0.22)}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:rgba(255,255,255,0.45)}
+.form-group select option{background:var(--navy)}
+.form-submit{background:#fff;color:var(--navy);border:none;padding:15px 36px;font-size:15px;font-weight:500;font-family:var(--sans);cursor:pointer;align-self:flex-start;transition:opacity 0.2s,transform 0.15s;margin-top:0.5rem}
 .form-submit:hover{opacity:0.9;transform:translateY(-1px)}
 
 /* FOOTER */
-.site-footer{border-top:1px solid var(--line);padding:2.5rem 2rem}
+.site-footer{border-top:1px solid var(--line);padding:2.5rem 2rem;background:var(--paper)}
 .footer-inner{max-width:var(--max-w);margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
-.footer-brand{display:flex;align-items:center;gap:10px;font-size:14px;color:var(--ink-2)}
-.logo-mark.small{width:24px;height:24px;font-size:11px}
-.footer-copy{font-size:13px;color:var(--ink-3)}
+.footer-brand{display:flex;align-items:center;gap:10px;font-size:13px;color:var(--ink-2)}
+.footer-logo-img{height:28px;width:auto;object-fit:contain}
+.footer-copy{font-size:12px;color:var(--ink-3)}
 
 /* ANIMATIONS */
 .reveal{opacity:0;transform:translateY(24px);transition:opacity 0.7s ease,transform 0.7s ease}
@@ -132,17 +146,19 @@ a{text-decoration:none}
 /* RESPONSIVE */
 @media(max-width:860px){
   .about-inner{grid-template-columns:1fr;gap:3rem}
-  .services-grid{grid-template-columns:1fr}
+  .services-grid{grid-template-columns:1fr 1fr}
   .work-grid{grid-template-columns:1fr}
   .form-row{grid-template-columns:1fr}
   .hero-stat{padding:0 1.5rem}
 }
 @media(max-width:600px){
+  .services-grid{grid-template-columns:1fr}
   .nav-links{display:none;flex-direction:column;position:absolute;top:var(--nav-h);left:0;right:0;background:var(--paper);border-bottom:1px solid var(--line);padding:1rem}
   .nav-links.open{display:flex}
   .nav-toggle{display:flex}
   .hero-stat-row{flex-direction:column;gap:1.5rem}
   .hero-stat+.hero-stat{border-left:none;border-top:1px solid var(--line);padding-top:1.5rem}
+  .logo-text{display:none}
 }
 </style>
 </head>
@@ -152,8 +168,8 @@ a{text-decoration:none}
 <header class="site-header">
   <nav class="nav-inner">
     <a href="#" class="logo">
-      <div class="logo-mark">G</div>
-      <span class="logo-text">GAP Analytics</span>
+      <img src="data:image/png;base64,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" class="logo-img" alt="Geneva Analytics Partners">
+      <span class="logo-text">Geneva Analytics Partners</span>
     </a>
     <ul class="nav-links" id="nav-links">
       <li><a href="#about">About</a></li>
@@ -171,25 +187,28 @@ a{text-decoration:none}
 <section class="hero" id="home">
   <div class="hero-grid"></div>
   <div class="hero-inner">
-    <span class="hero-eyebrow reveal">Analytics · Strategy · Insight</span>
-    <h1 class="reveal">Data that speaks.<br><em>Decisions that last.</em></h1>
-    <p class="hero-sub reveal">GAP Analytics Consulting partners with organizations to turn complex data into clear, actionable strategy. We bridge the gap between numbers and outcomes.</p>
+    <span class="hero-eyebrow reveal">
+      <span class="eyebrow-dot"></span>
+      Geneva · Analytics · Strategy
+    </span>
+    <h1 class="reveal">Where rigorous data meets<br><em>strategic clarity.</em></h1>
+    <p class="hero-sub reveal">Geneva Analytics Partners is a young, driven consulting group combining expertise in economics, management, and statistics to help organisations make better decisions with their data.</p>
     <div class="hero-actions reveal">
       <a href="#services" class="btn-primary">Our services</a>
       <a href="#contact" class="btn-secondary">Start a conversation</a>
     </div>
     <div class="hero-stat-row">
       <div class="hero-stat">
-        <div class="hero-stat-num" id="stat-1">120+</div>
-        <div class="hero-stat-label">Engagements delivered</div>
+        <div class="hero-stat-num">1 yr</div>
+        <div class="hero-stat-label">In operation</div>
       </div>
       <div class="hero-stat">
-        <div class="hero-stat-num" id="stat-2">14 yrs</div>
-        <div class="hero-stat-label">Industry experience</div>
+        <div class="hero-stat-num">1</div>
+        <div class="hero-stat-label">Completed project</div>
       </div>
       <div class="hero-stat">
-        <div class="hero-stat-num" id="stat-3">98%</div>
-        <div class="hero-stat-label">Client retention rate</div>
+        <div class="hero-stat-num">3</div>
+        <div class="hero-stat-label">Core disciplines</div>
       </div>
     </div>
   </div>
@@ -200,31 +219,45 @@ a{text-decoration:none}
   <div class="about-inner">
     <div class="about-text">
       <p class="section-label">About GAP</p>
-      <h2>We close the gap between <em>data and direction</em></h2>
-      <p>GAP Analytics Consulting was founded on a simple conviction: most organizations are sitting on insights they never use. The gap between having data and making better decisions is where we work.</p>
-      <p>Our team of analysts, strategists, and sector specialists brings rigorous methodology and clear communication to every engagement — from rapid diagnostics to multi-year transformation programs.</p>
-      <a href="#contact" class="btn-primary" style="margin-top:1.5rem;display:inline-block">Work with us</a>
+      <h2>We close the gap between, <em>data and direction</em></h2>
+      <p>Geneva Analytics Partners was founded with a clear purpose: to bring the analytical rigour of economics, the strategic thinking of management, and the precision of statistics to organisations that want more from their data.</p>
+      <p>We are a young firm — one year in, with our first project completed — moving fast, thinking carefully, and always delivering work we are proud to put our name on.</p>
+      <p>Based in Geneva, we work with clients across sectors who share a common challenge: they have data, but they need insight.</p>
+      <div class="team-disciplines">
+        <span class="discipline-tag">Economics</span>
+        <span class="discipline-tag">Management</span>
+        <span class="discipline-tag">Statistics</span>
+        <span class="discipline-tag">Data Analysis</span>
+        <span class="discipline-tag">Strategy</span>
+      </div>
     </div>
     <div class="about-pillars">
       <div class="pillar reveal">
         <div class="pillar-num">01</div>
         <div class="pillar-text">
-          <strong>Rigour first</strong>
-          <p>Every recommendation is grounded in evidence. We interrogate assumptions before we build on them.</p>
+          <strong>Multidisciplinary by design</strong>
+          <p>Our team holds backgrounds in economics, management, and statistics — giving every engagement depth that single-discipline firms cannot match.</p>
         </div>
       </div>
       <div class="pillar reveal">
         <div class="pillar-num">02</div>
         <div class="pillar-text">
-          <strong>Clarity of communication</strong>
-          <p>Analysis only creates value when understood. We translate complexity into language that moves people to act.</p>
+          <strong>Honest, evidence-based advice</strong>
+          <p>We interrogate data before we draw conclusions. Every recommendation is grounded in analysis, not assumption.</p>
         </div>
       </div>
       <div class="pillar reveal">
         <div class="pillar-num">03</div>
         <div class="pillar-text">
-          <strong>Lasting capability</strong>
-          <p>We leave teams stronger than we found them — building internal analytical muscle alongside every deliverable.</p>
+          <strong>Clarity above complexity</strong>
+          <p>The best analysis is useless if it cannot be understood. We communicate findings in plain language that drives real decisions.</p>
+        </div>
+      </div>
+      <div class="pillar reveal">
+        <div class="pillar-num">04</div>
+        <div class="pillar-text">
+          <strong>Fresh eyes, serious craft</strong>
+          <p>Being a young firm is an advantage — we bring energy, curiosity, and no bad habits to every client relationship.</p>
         </div>
       </div>
     </div>
@@ -237,38 +270,38 @@ a{text-decoration:none}
     <div class="section-header reveal">
       <p class="section-label">What we do</p>
       <h2>Services</h2>
-      <p>Focused engagements designed to move organizations from uncertainty to confident action.</p>
+      <p>Focused engagements drawing on economics, management, and statistical expertise.</p>
     </div>
     <div class="services-grid">
       <div class="service-card reveal">
         <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="m7 16 4-4 4 4 4-4"/></svg></div>
         <h3>Performance Analytics</h3>
-        <p>Design and deploy measurement frameworks that track what actually matters — connecting operational metrics to strategic objectives with precision.</p>
+        <p>Measurement frameworks that connect operational metrics to strategic objectives — drawing on statistical modelling to track what truly matters.</p>
       </div>
       <div class="service-card reveal">
         <div class="service-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg></div>
-        <h3>Strategic Intelligence</h3>
-        <p>Market sensing, competitive benchmarking, and scenario modelling to sharpen your strategic picture and reduce decision risk at the executive level.</p>
+        <h3>Economic Analysis</h3>
+        <p>Market assessments, cost-benefit analysis, and economic impact studies grounded in rigorous methodology and real-world context.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M2 20h.01M7 20v-4"/><path d="M12 20v-8"/><path d="M17 20V8"/><path d="M22 4v16"/></svg></div>
+        <h3>Statistical Modelling</h3>
+        <p>From regression analysis to forecasting models — we build and validate quantitative tools that give organisations reliable foresight.</p>
       </div>
       <div class="service-card reveal">
         <div class="service-icon"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
         <h3>Data Infrastructure</h3>
-        <p>Audit, redesign, and implement data pipelines that are reliable, governed, and genuinely usable by the teams who depend on them day to day.</p>
+        <p>Audit and restructure your data pipelines so the right information reaches the right people in a usable, trustworthy format.</p>
       </div>
       <div class="service-card reveal">
         <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
-        <h3>Organisational Diagnostics</h3>
-        <p>Rapid, structured assessments of analytical capability, culture, and tooling — producing a clear roadmap for building a data-driven organisation.</p>
+        <h3>Strategic Advisory</h3>
+        <p>Management-level guidance on organisational decisions, drawing on cross-disciplinary analysis to reduce uncertainty at the top.</p>
       </div>
       <div class="service-card reveal">
         <div class="service-icon"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
-        <h3>Forecasting &amp; Modelling</h3>
-        <p>Robust demand, financial, and operational models built to be understood, maintained, and trusted by the teams who will rely on them long-term.</p>
-      </div>
-      <div class="service-card reveal">
-        <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M2 20h.01M7 20v-4"/><path d="M12 20v-8"/><path d="M17 20V8"/><path d="M22 4v16"/></svg></div>
-        <h3>Reporting &amp; Visualisation</h3>
-        <p>Executive dashboards, board-level reporting suites, and data storytelling that distils complexity into the clarity leadership needs to act decisively.</p>
+        <h3>Reporting &amp; Dashboards</h3>
+        <p>Clear, well-designed reporting suites and executive dashboards that turn complex outputs into confident, communicable insight.</p>
       </div>
     </div>
   </div>
@@ -279,62 +312,43 @@ a{text-decoration:none}
   <div class="work-inner">
     <div class="section-header reveal">
       <p class="section-label">Our work</p>
-      <h2>Selected case studies</h2>
-      <p>A sample of the engagements we're proud of. Details anonymised where required.</p>
+      <h2>Selected projects</h2>
+      <p>Our first completed engagement — delivered as part of the Analytics Consulting course at GSEM, University of Geneva.</p>
     </div>
-    <div class="work-grid">
+    <div class="work-grid work-grid-single">
+
       <div class="work-card reveal">
         <div class="work-card-header">
-          <span class="work-tag">Performance Analytics</span>
-          <span class="work-year">2024</span>
+          <span class="work-tag">Data Analysis</span>
+          <span class="work-year">2025</span>
         </div>
-        <h3>Revenue attribution overhaul for a pan-European retailer</h3>
-        <p class="work-client">Retail &amp; Consumer Goods · 3,200 employees</p>
-        <p class="work-summary">The client's legacy attribution model was misallocating €40M in marketing spend annually. We rebuilt their measurement framework from the ground up — unifying five data sources into a single source of truth and deploying a multi-touch attribution model tailored to their omnichannel journey.</p>
+        <h3>Website Engagement Analysis — Session Depth &amp; Visitor Behaviour</h3>
+        <p class="work-client">Analytics Consulting · GSEM, University of Geneva · Prof. Diego Kuonen</p>
+        <p class="work-summary">An exploratory analysis of 50,000 website sessions recorded over a single day, examining how deeply visitors browse and identifying patterns in user behaviour. The study revealed that over half of all visits involve only one or two pages, establishing early retention as the primary engagement challenge. Two clearly distinct visitor types were identified — bounce users who exit immediately, and an engaged segment whose median session reaches four pages once past the first. Automated traffic (sessions exceeding 100 pages) was flagged and excluded to ensure analytical integrity.</p>
+        <div class="work-findings">
+          <div class="finding-item">
+            <span class="finding-num">36.5%</span>
+            <span class="finding-desc">Bounce rate — visitors leaving after one page</span>
+          </div>
+          <div class="finding-item">
+            <span class="finding-num">2 pages</span>
+            <span class="finding-desc">Median session length across all 50,000 visits</span>
+          </div>
+          <div class="finding-item">
+            <span class="finding-num">4 pages</span>
+            <span class="finding-desc">Median for engaged visitors (excluding single-page sessions)</span>
+          </div>
+        </div>
         <div class="work-result">
-          <span class="result-label">Outcome</span>
-          <span class="result-text">23% improvement in marketing ROI within two quarters of implementation.</span>
+          <span class="result-label">Key recommendation</span>
+          <span class="result-text">Strengthen the landing page experience and introduce clearer calls-to-action to convert bounce visitors into engaged browsers.</span>
+        </div>
+        <div class="work-team">
+          <span class="team-label">Team</span>
+          <span class="team-names">A. Y. Baccar · G. Bonetta · M. Brunner · Z. Ghafghazi · R. Karimian · A. Markous · S. Ropelewski</span>
         </div>
       </div>
-      <div class="work-card reveal">
-        <div class="work-card-header">
-          <span class="work-tag">Strategic Intelligence</span>
-          <span class="work-year">2024</span>
-        </div>
-        <h3>Competitive landscape analysis for a public sector health authority</h3>
-        <p class="work-client">Public Health · National agency</p>
-        <p class="work-summary">Ahead of a major procurement decision, we delivered a structured competitive intelligence programme — mapping 14 vendors across capability, pricing, and delivery track record. The analysis surfaced three previously unconsidered providers that changed the shortlist entirely.</p>
-        <div class="work-result">
-          <span class="result-label">Outcome</span>
-          <span class="result-text">Estimated £2.1M in contract savings; decision made with full market visibility.</span>
-        </div>
-      </div>
-      <div class="work-card reveal">
-        <div class="work-card-header">
-          <span class="work-tag">Forecasting &amp; Modelling</span>
-          <span class="work-year">2023</span>
-        </div>
-        <h3>Demand forecasting engine for a logistics firm scaling into new markets</h3>
-        <p class="work-client">Logistics &amp; Supply Chain · Series C scale-up</p>
-        <p class="work-summary">Operating with spreadsheet-based forecasting, the client faced chronic over- and under-stocking across four new geographies. We designed a probabilistic demand model integrated directly into their ERP, with confidence intervals surfaced for non-technical ops leads.</p>
-        <div class="work-result">
-          <span class="result-label">Outcome</span>
-          <span class="result-text">Forecast accuracy improved from 61% to 89%; inventory costs reduced by 31%.</span>
-        </div>
-      </div>
-      <div class="work-card reveal">
-        <div class="work-card-header">
-          <span class="work-tag">Organisational Diagnostics</span>
-          <span class="work-year">2023</span>
-        </div>
-        <h3>Analytics capability review for a financial services group post-merger</h3>
-        <p class="work-client">Financial Services · 600 employees</p>
-        <p class="work-summary">Following a merger, two data teams operated with incompatible tooling, processes, and cultures. Our diagnostic produced a consolidated capability map, identified redundancies, and delivered a 90-day integration roadmap accepted in full by the board.</p>
-        <div class="work-result">
-          <span class="result-label">Outcome</span>
-          <span class="result-text">Teams merged within 11 weeks; annual tooling costs cut by 40%.</span>
-        </div>
-      </div>
+
     </div>
   </div>
 </section>
@@ -344,7 +358,7 @@ a{text-decoration:none}
   <div class="contact-inner">
     <p class="section-label">Get in touch</p>
     <h2>Ready to close the gap?</h2>
-    <p>Tell us about your challenge. We'll respond within one business day with a candid view on how we can help.</p>
+    <p class="contact-intro">Whether you have a well-defined project or just a question you can't answer with your current data — we'd like to hear from you. We respond within one business day.</p>
     <form class="contact-form" onsubmit="handleSubmit(event)">
       <div class="form-row">
         <div class="form-group">
@@ -352,30 +366,30 @@ a{text-decoration:none}
           <input type="text" id="name" placeholder="Jane Smith" required>
         </div>
         <div class="form-group">
-          <label for="email">Work email</label>
+          <label for="email">Email address</label>
           <input type="email" id="email" placeholder="jane@company.com" required>
         </div>
       </div>
       <div class="form-group">
         <label for="org">Organisation</label>
-        <input type="text" id="org" placeholder="Company or institution">
+        <input type="text" id="org" placeholder="Company, institution, or individual">
       </div>
       <div class="form-group">
         <label for="service">Area of interest</label>
         <select id="service">
           <option value="">Select a service</option>
           <option>Performance Analytics</option>
-          <option>Strategic Intelligence</option>
+          <option>Economic Analysis</option>
+          <option>Statistical Modelling</option>
           <option>Data Infrastructure</option>
-          <option>Organisational Diagnostics</option>
-          <option>Forecasting &amp; Modelling</option>
-          <option>Reporting &amp; Visualisation</option>
+          <option>Strategic Advisory</option>
+          <option>Reporting &amp; Dashboards</option>
           <option>Not sure yet</option>
         </select>
       </div>
       <div class="form-group">
-        <label for="message">Your challenge</label>
-        <textarea id="message" rows="4" placeholder="Briefly describe what you're trying to solve or improve..."></textarea>
+        <label for="message">Your challenge or question</label>
+        <textarea id="message" rows="4" placeholder="Tell us what you're trying to solve, understand, or decide..."></textarea>
       </div>
       <button type="submit" class="form-submit" id="submit-btn">Send message →</button>
     </form>
@@ -386,27 +400,24 @@ a{text-decoration:none}
 <footer class="site-footer">
   <div class="footer-inner">
     <div class="footer-brand">
-      <div class="logo-mark small" style="background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-weight:700">G</div>
-      GAP Analytics Consulting
+<img src="data:image/png;base64,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" class="footer-logo-img" alt="Geneva Analytics Partners">
+      Geneva Analytics Partners
     </div>
-    <p class="footer-copy">&copy; 2025 GAP Analytics Consulting. All rights reserved.</p>
+    <p class="footer-copy">&copy; 2026 Geneva Analytics Partners. Geneva, Switzerland.</p>
   </div>
 </footer>
 
 <script>
-// Scroll reveal
 const observer = new IntersectionObserver(entries => {
   entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
-}, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-// Mobile nav
 const toggle = document.getElementById('nav-toggle');
 const navLinks = document.getElementById('nav-links');
 toggle.addEventListener('click', () => navLinks.classList.toggle('open'));
 navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
 
-// Form handler
 function handleSubmit(e) {
   e.preventDefault();
   const btn = document.getElementById('submit-btn');
